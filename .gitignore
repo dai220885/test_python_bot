@@ -5,6 +5,7 @@
 /.idea
 /venv
 /__pycache__
+token.py
 
 # testing
 /coverage

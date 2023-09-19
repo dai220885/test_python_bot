@@ -1,7 +1,6 @@
 import openpyxl
+from token import API_TOKEN
 from aiogram import Bot, Dispatcher, executor, types
-
-API_TOKEN = '5895370548:AAH7GWnFCkdXSNpqQIQZ0MWAJg0YBcYB8R4'
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
