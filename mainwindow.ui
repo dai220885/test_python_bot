@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>915</width>
+    <height>586</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>901</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>firstname</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>lastname</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>phone number</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>age</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>address</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>info1</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>info2</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="readCsvButton">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>490</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>read csv file</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveChangesButton">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>490</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>save changes</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="readExelButton">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>490</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>read exel file</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>915</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menug">
+    <property name="title">
+     <string>file</string>
+    </property>
+    <addaction name="actionOpenCsv"/>
+    <addaction name="actionOpenExel"/>
+   </widget>
+   <widget class="QMenu" name="menucontacts">
+    <property name="title">
+     <string>contacts</string>
+    </property>
+    <addaction name="actionFindContact"/>
+   </widget>
+   <addaction name="menug"/>
+   <addaction name="menucontacts"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpenCsv">
+   <property name="text">
+    <string>open csv</string>
+   </property>
+  </action>
+  <action name="actionFindContact">
+   <property name="text">
+    <string>find</string>
+   </property>
+  </action>
+  <action name="actionOpenExel">
+   <property name="text">
+    <string>open exel</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
